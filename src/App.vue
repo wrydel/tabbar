@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TabBar>
+      <TabBarItem>
+        <img slot="item-icon" src="./assets/img/tabbar/home.svg" alt="">
+        <div slot="item-text">首页</div>
+      </TabBarItem>
+      <TabBarItem>
+        <img slot="item-icon" src="./assets/img/tabbar/category.svg" alt="">
+        <div slot="item-text">分类</div>
+      </TabBarItem>
+        <TabBarItem>
+        <img slot="item-icon" src="./assets/img/tabbar/shopcart.svg" alt="">
+        <div slot="item-text">购物车</div>
+      </TabBarItem>
+        <TabBarItem>
+        <img slot="item-icon" src="./assets/img/tabbar/profile.svg" alt="">
+        <div slot="item-text">我的</div>
+      </TabBarItem>
+    </TabBar>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TabBar from './components/tabbar/TapBar.vue'
+import TabBarItem from './components/tabbar/TabBarItem'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TabBar,
+    TabBarItem
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "./assets/css/base.css";
+
+
 </style>
