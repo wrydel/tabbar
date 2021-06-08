@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-bar-item">
+  <div class="tab-bar-item" @click="itemclick">
     <slot name="item-icon"></slot>
     <slot name="item-text"></slot>
   </div>
@@ -8,6 +8,19 @@
 <script>
 export default {
   name:"TabBarItem", 
+  props:{
+
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+    itemclick() {
+      this.$router.push()
+    }
+  }
 }
 </script>
 
