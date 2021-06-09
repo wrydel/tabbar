@@ -15,23 +15,24 @@ const routes = [
   },
   {
     path:'/home',
-    conponent:Home,
+    component:Home,
   },
   {
     path:'/shopcart',
-    conponent:Shopcart,
+    component:Shopcart,
   },
   {
     path:'/category',
-    conponent:Category,
+    component:Category,
   },
   {
     path:'/profile',
-    conponent:Profile,
+    component:Profile,
   },
 ]
 
 const router = new VueRouter ({
+  mode:"history",
   routes
 })
 
