@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+<<<<<<< HEAD
     <TabBar>
       <TabBarItem path="/home">
         <img slot="item-icon" src="./assets/img/tabbar/home.svg" alt="">
@@ -19,6 +20,9 @@
         <div slot="item-text">我的</div>
       </TabBarItem>
     </TabBar>
+=======
+    <MainBar></MainBar>
+>>>>>>> 722a88f05b331f558f4a014b69353b954513a685
     
   </div>
 </template>
@@ -26,13 +30,14 @@
 <script>
 import TabBar from './components/tabbar/TapBar.vue'
 import TabBarItem from './components/tabbar/TabBarItem'
+import MainBar from "./components/mainbar/MainBar"
 
 export default {
   name: 'App',
   components: {
     TabBar,
-    TabBarItem
-
+    TabBarItem,
+    MainBar
   }
 }
 </script>
